@@ -12,15 +12,70 @@ body {
   align-items: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  height: 200px;
+  /* padding: 30px 90px; */
+  background-color: rgb(233, 233, 233);
+  margin-bottom: 50px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.header a{
+  position: relative;
+  transform: translateY(20px);
+}
+
+.github{
+  width: 60px;
+  height: 60px;
+  border: 5px solid white;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 0; */
+  bottom: 0;
+  svg{
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  
+}
+
+.github i{
+  position: absolute;
+  offset: 0;
+}
+
+.github i::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: green;
+  top: 22px;
+  left: -16px;
+  border-bottom-right-radius: 20px;
+  box-shadow: -3px -3px white;
+}
+
 h1 {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
-  padding: 50px 50px;
-  background-color: rgb(233, 233, 233);
-  margin-bottom: 25px;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  padding: 50px 40px;
+
   .html {
     color: rgb(255, 115, 0);
   }
@@ -40,7 +95,7 @@ h1 {
 ol {
   /* background-color: antiquewhite; */
   columns: 2;
-  column-gap: 5rem;
+  column-gap: 8rem;
 }
 
 li {
@@ -64,7 +119,19 @@ li:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: rgb(190, 190, 190);
   border-radius: 100px;
-  
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .header {
+    width: 100%;
+  }
+  ol {
+    columns: 1;
+  }
+  .list-container {
+    width: 70%;
+  }
 }
