@@ -56,3 +56,16 @@ li a {
 li:hover {
   transform: scale(1.1);
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 100px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
