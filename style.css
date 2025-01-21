@@ -16,14 +16,43 @@ h1 {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
-  padding: 100px 50px;
+  padding: 50px 50px;
+  background-color: rgb(233, 233, 233);
+  margin-bottom: 25px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  .html {
+    color: rgb(255, 115, 0);
+  }
+  .css {
+    color: rgb(0, 153, 255);
+  }
+  .js {
+    color: rgb(255, 217, 0);
+  }
 }
 
 .list-container {
-  width: 60%;
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+ol {
+  /* background-color: antiquewhite; */
+  columns: 2;
+  column-gap: 5rem;
 }
 
 li {
   font-family: "Poppins", serif;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+}
+li a {
+  text-decoration: none;
+  color: #000;
+}
+
+li:hover {
+  transform: scale(1.1);
 }
