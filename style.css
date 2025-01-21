@@ -64,8 +64,7 @@ li:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: #000000;
   border-radius: 100px;
-  margin-right: 2px;
-  margin-left: 2px;
+  
 }
